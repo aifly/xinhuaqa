@@ -177,7 +177,7 @@ $viewW:640px;
 
      .zmiti-dangjian-q-title{
         width: 90%;
-        margin: 80px auto;
+        margin: 130px auto;
         background: rgba(255,255,255,.8);
         @include br(10px);
         &:before{
@@ -201,7 +201,7 @@ $viewW:640px;
         @include pos(r);
 
         article>div{
-          padding: 80px 30px;
+          padding: 80px 30px 40px 30px;;
         }
 
         .zmiti-dangjian-pager{
@@ -309,7 +309,7 @@ $viewW:640px;
     @include transition(.3s);
     @include transform(translate3d($viewW,0,0));
 
-    background: #fff;
+    background: rgba(255,255,255,.8);
     z-index: 5000;
 
     &.active{
@@ -319,7 +319,7 @@ $viewW:640px;
     .zmiti-dangjian-score-C{
       width: 90%;
       margin: 150px auto 50px;
-      background: #fff;
+      background: rgba(255,255,255,.8);
       border:1px solid #000;
       text-align: center;
       padding: 150px 40px 40px;
@@ -341,7 +341,7 @@ $viewW:640px;
          top: -$size /2;
          left: 50%;
          margin-left: -$size /2;
-         background: #fff;
+         background: rgba(255,255,255,.8);
          line-height: $size - 30;
 
          svg{

@@ -68,7 +68,7 @@ class ZmitiContentApp extends Component {
 			break;
 			case "DANGJIAN":
 			var mainStyle = {
-					background:"#fff url(./assets/images/bg.png) no-repeat center center / cover "
+					background:" url(./assets/images/bg.png) no-repeat center center / cover "
 				}
 			component = <div className='zmiti-dangjian-content-C lt-full' style={mainStyle} onTouchStart={this.contentTap.bind(this)}>
 				<section className={'zmiti-dangjian-content-user lt-full '+(this.state.hideUser?'hide':'')} >
@@ -113,7 +113,7 @@ class ZmitiContentApp extends Component {
 						}
 						var scrollStyle ={
 							height:this.viewH - 78,
-							background:"#fff url(./assets/images/bg.png) no-repeat center center / cover "
+							background:"url(./assets/images/bg.png) no-repeat center center / cover "
 
 						}
 
@@ -221,7 +221,7 @@ class ZmitiContentApp extends Component {
 
 		this.setState({
 			hideContent:true
-		})
+		});
 
 	}
 
@@ -229,7 +229,8 @@ class ZmitiContentApp extends Component {
 		this.setState({
 			hideList:false,
 			currentQid:0,
-			showScore:false
+			showScore:false,
+			currentAnswer:[]
 		},()=>{
 			//this.scroll.refresh();
 		});
@@ -264,9 +265,6 @@ class ZmitiContentApp extends Component {
 
 		});
 
-
-
-
 		this.props.question.map((item,i)=>{
 			if(item.isMultiselect){
 				var isRight = true;
@@ -284,11 +282,13 @@ class ZmitiContentApp extends Component {
 					}
 				})
 			}
-		})
+		});
 		
 		obserable.trigger({
 			type:'clearCountdown'
 		})
+		
+		score>=100 &&( score = 100);
 
 		setTimeout(()=>{
 			this.setState({
