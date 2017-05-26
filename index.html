@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="font-size: 32px;">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,email=no" />
+	<title></title>
+	<script>
+		document.addEventListener("touchmove",function(e){e.preventDefault();});
+	</script>
+	<style>
+		body{
+			font-family: "Helvetica Neue", 'Helvetica', "Microsoft YaHei", '微软雅黑', arial, sans-serif;
+		}
+		.zmiti-loadin-text{
+			position: absolute;
+			width:100%;
+			text-align: center;
+			top: 50%;
+		}
+	</style>
+</head>
+<body style="overflow: hidden;">
+		<div id="fly-main-ui">
+			<span class='zmiti-loadin-text'>正在进入...</span>
+		</div>
+		
+		<!-- 
+			<script src='http://localhost:4600/index.js'></script> 
+		-->
+
+		<script type="text/javascript">
+			window.PointerEvent = void 0;
+			function onError(){
+				var script  = document.createElement('script');
+				script.src = './assets/js/index.js?aa='+new Date().getTime();
+				document.body.appendChild(script);
+			}
+
+			window.formTitle = '请输入你的姓名和电话';
+
+			/*(function(){
+				var script  = document.createElement('script');
+				script.src = './assets/js/index.js?aa='+new Date().getTime();
+				document.body.appendChild(script);
+			})()*/
+
+		</script>
+
+		<script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script>
+		<script src='http://localhost:3008/index.js' onError='onError()'></script>
+
+		<!-- <script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script> -->
+		<!--
+		<script src='./assets/js/index.js'></script>
+		 
+		  -->
+	
+		<!-- <script src='http://localhost:4600/index.js' onError='onError()'></script>  -->
+</body>
+</html>
