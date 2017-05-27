@@ -157,7 +157,7 @@ class ZmitiContentApp extends Component {
 								</svg>
 							</div>
 							<div>{this.state.username}同志</div>
-							<div>学思践物，知行合一</div>
+							<div>学思践悟，知行合一</div>
 							<div>在本次测试中获得<span>{this.state.score}</span>分</div>
 						</div>
 						<div onTouchTap={this.watchAnswer.bind(this)} className='zmiti-dangjian-result-btn'>
@@ -315,6 +315,7 @@ class ZmitiContentApp extends Component {
 	   			longitude:s.zmitiMap[idx].log,
 	   			latitude:s.zmitiMap[idx].lat,
 	   			accuracy:100,
+	   			customid:21,//对应的订制的id
 	   			usetime:s.props.totalDuration-s.props.duration,
 	   			totaltime:s.props.totalDuration,
 	   			wxappid:'wxfacf4a639d9e3bcc',
@@ -340,6 +341,9 @@ class ZmitiContentApp extends Component {
 
 	doNext(){//下一题目；
 
+		if(!this.state.currentAnswer || this.state.currentAnswer.length<=0){
+			this.state.currentAnswer = [[undefined]];
+		}
 		let {obserable} = this.props;
 		obserable.trigger({
 			type:'fillAnswer',
