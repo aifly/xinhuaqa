@@ -131,12 +131,12 @@ $viewW:640px;
      @include displayBox(horizontal);
      .zmiti-dangjian-C{
        width: 450px;
-       height: 70vh;
+       height: 55vh;
        
        @include br(10px);
         
        .zmiti-dangjian-cover{
-         height: 65vh;
+         height: 55vh;
          border:1px solid #fff;
          @include br(10px);
          background:rgba(255,102,102,.7);
@@ -182,9 +182,9 @@ $viewW:640px;
        .zmiti-index-title{
         width: 360px;
         @include pos(a);
-        height: 34vh;
+        height:28vh;
         background: #fff;
-        bottom: 4vh;
+        bottom: 1vh;
         z-index: 0;
         left: 50%;
         margin-left: -180px;

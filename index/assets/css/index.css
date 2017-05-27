@@ -127,10 +127,10 @@
     -webkit-box-orient: horizontal; }
     .zmiti-index-main-ui .zmiti-index-dangjian-theme .zmiti-dangjian-C {
       width: 450px;
-      height: 70vh;
+      height: 55vh;
       border-radius: 10px; }
       .zmiti-index-main-ui .zmiti-index-dangjian-theme .zmiti-dangjian-C .zmiti-dangjian-cover {
-        height: 65vh;
+        height: 55vh;
         border: 1px solid #fff;
         border-radius: 10px;
         background: rgba(255, 102, 102, 0.7);
@@ -174,9 +174,9 @@
       .zmiti-index-main-ui .zmiti-index-dangjian-theme .zmiti-dangjian-C .zmiti-index-title {
         width: 360px;
         position: absolute;
-        height: 34vh;
+        height: 28vh;
         background: #fff;
-        bottom: 4vh;
+        bottom: 1vh;
         z-index: 0;
         left: 50%;
         margin-left: -180px;

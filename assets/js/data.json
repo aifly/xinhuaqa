@@ -1,7 +1,7 @@
 {
     "shareTitle": "应知应会小测验",
-    "shareDesc": "党总支喊你来答题",
-    "shareImg": "http://h5.zmiti.com/public/qa/assets/images/300.jpg",
+    "shareDesc": "推进“两学一做”学习教育常态化制度化，党总支喊你来答题",
+    "shareImg": "http://h5.zmiti.com/public/qa2/assets/images/300.jpg",
     "background": "",
     "bgSound": "",
     "myHeadImg": "http://api.zmiti.com/zmiti_ele/company/yangjw/material/20170512/e86045dbe0675cfac24979c60dcabd1f.png",
@@ -131,7 +131,7 @@
                     "isRight":false
                 },
                  {
-                    "content":"一手抓建设，一手抓党风",
+                    "content":"一手抓稳定，一手抓建设",
                     "isRight":true
                 }
             ]
