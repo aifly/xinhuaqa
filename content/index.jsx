@@ -306,7 +306,7 @@ class ZmitiContentApp extends Component {
 	   		url:'http://api.zmiti.com/v2/weixin/postqascore/',
 	   		type:'get',
 	   		data:{
-	   			wxopenid:'zmiti-qa-'+new Date().getTime(),
+	   			wxopenid:'',
 	   			worksid:'1495610848973',
 	   			nickname:s.state.username,
 	   			realname:s.state.username,
